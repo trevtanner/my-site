@@ -129,7 +129,7 @@
 .homebg {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 100vh;
   background-image: url("../public/images/homepage-1080.jpg");
   width: 100vw;
   max-width: 100%;
@@ -141,7 +141,7 @@
 .aboutbg {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   background-image: url("../public/images/battlestation1080.jpg");
   width: 100vw;
   max-width: 100%;
@@ -153,7 +153,7 @@
 .portfoliobg {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 90vh;
   background-image: url("../public/images/workstation1080.jpg");
   width: 100vw;
   max-width: 100%;
@@ -165,7 +165,7 @@
 .resumebg {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 90vh;
   background-image: url("../public/images/resumebg1080.jpg");
   width: 100vw;
   max-width: 100%;
@@ -177,7 +177,7 @@
 .contactbg {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 90vh;
   background-image: url("../public/images/contactus1080.jpg");
   width: 100vw;
   max-width: 100%;

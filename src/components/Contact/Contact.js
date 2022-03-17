@@ -1,50 +1,27 @@
-import { Container, List, ListItemText, Grid, Button } from "@mui/material";
+import { Container, List, ListItemText, Grid, Button, Typography } from "@mui/material";
 import { Fragment } from "react";
 import classes from "./Contact.module.css";
 import styles from "../../Home.module.css";
-
+import SendIcon from '@mui/icons-material/Send';
+import FilePresentIcon from '@mui/icons-material/FilePresent';
 
 
 function about() {
   return (
-    <Fragment>
-     <div className={styles.contactbg}> 
-
-      </div>
-    <Container fluid>
+    <Container fixed>
+          <Typography variant="h4">Need More?</Typography>
       <Grid container spacing={4} className={classes.main}>
-        <Grid item xs={4}>
-          <h2>Do any of these apply to you?</h2>
+        <Grid item xs={6}>
+          <Typography variant="h6">Send me an Email</Typography>
+          <SendIcon />
         </Grid>
-        <Grid item xs={4}>
-          <List>
-            <ListItemText primary="FAQ" />
-            <ListItemText primary="Have a question about a built website?" />
-            <ListItemText primary="Interest in me building your website?" />
-            <ListItemText primary="A current client with a question about your product?" />
-            <ListItemText primary="You have feedback you would like me to see?" />
-            <ListItemText primary="Looking to give me a job?" />
-          </List>
+        <Grid item xs={6}sx={{ overflowWrap: "break-word", wordWrap: "break-word"}}>
+        <Typography variant="h6">View my Resume</Typography>
+          <FilePresentIcon />
         </Grid>
-        <Grid item xs={4}>
-          <p>
-            If so, please click here:
-            <br />
-            <Button
-              variant="contained"
-              href=""
-              className={classes.button}
-            >
-              Contact Me
-            </Button>
-            <br />
-            to send me a message, or reach out to me at
-            trevor.tanner.developer@gmail.com at your convenience.
-          </p>
-        </Grid>
+
       </Grid>
     </Container>
-    </Fragment>
   );
 }
 

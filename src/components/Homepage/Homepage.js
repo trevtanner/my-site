@@ -7,8 +7,8 @@ import {
   Container,
 } from "@mui/material";
 
-import  HomeContact  from "../Forms/HomeContact"
-
+import  HomeContact  from "../Forms/HomeContact";
+import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 
 
 export default function Homepage() {
@@ -30,9 +30,10 @@ export default function Homepage() {
         <Typography variant="h4">Full stack developer building stellar websites, one line at a time</Typography>
      </div>
       </div>
-      <Container fluid>
+      <Container fluid sx={{ mb: "1em", mt: "1em" }}>
       <div>
-        <h2>Knowledge Base</h2>
+      <ImportContactsIcon fontSize="large" />
+        <Typography variant="h4" sx={{ pb: ".25em" }}>Knowledge Base</Typography>
         <Typography variant="body1" color="text.primary">
           React
         </Typography>
@@ -135,10 +136,7 @@ export default function Homepage() {
           </Typography>
         </Box>
       </div>
-      <div>
-      <h1>Get in Touch</h1>
         <HomeContact />
-      </div>
       </Container>
     </Fragment>
   );
