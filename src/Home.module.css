@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .footer {
@@ -122,6 +123,7 @@
   }
 }
 
+
 .content {
   padding: 2em;
 }
@@ -129,13 +131,19 @@
 .homebg {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   background-image: url("../public/images/homepage-1080.jpg");
   width: 100vw;
   max-width: 100%;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+}
+.knowledgebg {
+  background-image: url("../public/images/webb.png");
+  background-position: center; /* Center the image */
+  background-attachment: fixed;
+
 }
 
 .aboutbg {

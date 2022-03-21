@@ -3,19 +3,15 @@
   display: flex;
   text-align: center;
   justify-content: space-between;
-  background-color: grey;
   padding: 0 10%;
   padding-bottom: .5em;
 }
-.links{
+
+.links:hover{
   color: white;
 }
 
-.links:hover{
-  color: black;
-}
-
 .icons:hover{
-  color: black;
+  color: grey;
   cursor: pointer;
 }

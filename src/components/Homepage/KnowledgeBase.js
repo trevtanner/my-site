@@ -1,64 +1,69 @@
-import { Fragment } from 'react'
-import styles from '../../Home.module.css'
-import { LinearProgress, Box, Typography, Container } from '@mui/material'
+import { Fragment } from "react";
+import styles from "../../Home.module.css";
+import {
+  LinearProgress,
+  Box,
+  Typography,
+  Container,
+  Paper,
+} from "@mui/material";
 
-import HomeContact from '../Forms/HomeContact'
-import ImportContactsIcon from '@mui/icons-material/ImportContacts'
+import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 
-export default function Homepage() {
+export default function KnowledgeBase() {
   const KNOWLEDGE_DATA = [
     {
-      name: 'React',
+      name: "React",
       value: 90,
-      color: 'primary',
+      color: "primary",
     },
     {
-      name: 'HTML/CSS',
+      name: "HTML/CSS",
       value: 95,
-      color: 'secondary',
+      color: "secondary",
     },
     {
-      name: 'PHP',
+      name: "PHP",
       value: 80,
-      color: 'success',
+      color: "success",
     },
     {
-      name: 'Laravel',
+      name: "Laravel",
       value: 80,
-      color: 'primary',
+      color: "primary",
     },
     {
-      name: 'SQL',
+      name: "SQL",
       value: 70,
-      color: 'secondary',
+      color: "secondary",
     },
     {
-      name: 'AWS',
+      name: "AWS",
       value: 55,
-      color: 'success',
+      color: "success",
     },
     {
-      name: 'Object-Oriented Programming',
+      name: "Object-Oriented Programming",
       value: 65,
-      color: 'primary',
+      color: "primary",
     },
-  ]
+  ];
 
-  const reactValue = 90
-  const htmlcssValue = 95
-  const phpValue = 80
-  const laravelValue = 80
-  const sqlValue = 70
-  const oopValue = 65
-  const awsValue = 55
+  const reactValue = 90;
+  const htmlcssValue = 95;
+  const phpValue = 80;
+  const laravelValue = 80;
+  const sqlValue = 70;
+  const oopValue = 65;
+  const awsValue = 55;
 
   const knowledgeBase = KNOWLEDGE_DATA.map((entry) => (
     <>
       <Typography variant="body1" color="text.primary">
         {entry.name}
       </Typography>
-      <Box sx={{ display: 'flex', alignItems: 'center' }}>
-        <Box sx={{ width: '100%', mr: 1 }}>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box sx={{ width: "100%", mr: 1 }}>
           <LinearProgress variant={entry.color} value={entry.value} />
         </Box>
         <Typography variant="body2" color="text.secondary">
@@ -66,29 +71,24 @@ export default function Homepage() {
         </Typography>
       </Box>
     </>
-  ))
+  ));
 
   return (
-    <Fragment>
-      <div className={styles.homebg}>
-        <div className={styles.imagetext}>
-          <Typography variant="h1">Trevor Tanner</Typography>
-          <Typography variant="h4">
-            Full stack developer building stellar websites, one line at a time
-          </Typography>
-        </div>
-      </div>
-      <Container fluid sx={{ mb: '1em', mt: '1em' }}>
+    <Container
+        sx={{ mb: "1em", pb: "1em", pt: ".5em", minWidth: "100%" }}
+      >
         <div>
+    {/* fix issue with margins in full screen */}
           <ImportContactsIcon fontSize="large" />
-          <Typography variant="h4" sx={{ pb: '.25em' }}>
+          <Typography variant="h4" marked="center" sx={{ pb: ".5em" }}>
             Knowledge Base
           </Typography>
+          
           <Typography variant="body1" color="text.primary">
             React
           </Typography>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1 }}>
               <LinearProgress
                 variant="determinate"
                 color="primary"
@@ -102,8 +102,8 @@ export default function Homepage() {
           <Typography variant="body1" color="text.primary">
             HTML/CSS
           </Typography>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1 }}>
               <LinearProgress
                 variant="determinate"
                 color="secondary"
@@ -117,8 +117,8 @@ export default function Homepage() {
           <Typography variant="body1" color="text.primary">
             PHP
           </Typography>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1 }}>
               <LinearProgress
                 variant="determinate"
                 color="success"
@@ -132,8 +132,8 @@ export default function Homepage() {
           <Typography variant="body1" color="text.primary">
             Laravel
           </Typography>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1 }}>
               <LinearProgress
                 variant="determinate"
                 color="primary"
@@ -147,8 +147,8 @@ export default function Homepage() {
           <Typography variant="body1" color="text.primary">
             SQL
           </Typography>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1 }}>
               <LinearProgress
                 variant="determinate"
                 color="secondary"
@@ -162,8 +162,8 @@ export default function Homepage() {
           <Typography variant="body1" color="text.primary">
             AWS
           </Typography>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1 }}>
               <LinearProgress
                 variant="determinate"
                 color="success"
@@ -177,8 +177,8 @@ export default function Homepage() {
           <Typography variant="body1" color="text.primary">
             Object-Oriented Programming
           </Typography>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box sx={{ width: '100%', mr: 1 }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ width: "100%", mr: 1 }}>
               <LinearProgress
                 variant="determinate"
                 color="primary"
@@ -190,8 +190,6 @@ export default function Homepage() {
             </Typography>
           </Box>
         </div>
-        <HomeContact />
       </Container>
-    </Fragment>
-  )
+  );
 }

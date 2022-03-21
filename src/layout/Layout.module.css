@@ -1,6 +1,6 @@
 .main {
-  margin: 0 auto;
+  margin: 0;
   /* width: 100%; */
   /* max-width: 80rem; */
-  padding-bottom: 2em;
+  padding-bottom: 0;
 }

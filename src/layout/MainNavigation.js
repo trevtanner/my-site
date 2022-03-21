@@ -32,7 +32,7 @@ function MainNavigation() {
   };
 
   return (
-    <AppBar position="static" className={classes.contain}>
+    <AppBar position="static" className={classes.contain} sx={{ backgroundColor: '#222733' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

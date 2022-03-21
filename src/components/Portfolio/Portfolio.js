@@ -17,8 +17,7 @@ function Portfolio() {
   return (
     <Fragment>
       <Container>
-          <Typography variant="h4">Examples of my Previous Work</Typography>
-        <PreviousWork />
+        <PreviousWork/>
       </Container>
     </Fragment>
   );
