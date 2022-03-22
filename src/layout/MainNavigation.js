@@ -31,8 +31,13 @@ function MainNavigation() {
     setAnchorElUser(null);
   };
 
+  const scrollTo = () => {
+    return 
+
+  }
+
   return (
-    <AppBar position="static" className={classes.contain} sx={{ backgroundColor: '#222733' }}>
+    <AppBar position="static" className={classes.contain} sx={{ backgroundColor: 'primary' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -75,7 +80,7 @@ function MainNavigation() {
             >
             <MenuItem>
             <Typography textAlign="right">
-        <Button sx={{display: "block" }}>Home</Button>
+        <Button sx={{display: "block" }} onClick={scrollTo}>Home</Button>
         <Button sx={{display: "block" }}>About</Button>
         <Button sx={{display: "block" }}>Portfolio</Button>
         <Button sx={{display: "block" }}>Resume</Button>

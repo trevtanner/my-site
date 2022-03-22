@@ -22,9 +22,11 @@ function about() {
   return (
     <Container sx={{ p: '1em' }}>
       <Grid container spacing={5} className={classes.main}>
-        <Grid item xs={12} sx={{}}>
+        <Grid item xs={12}>
+        <Paper sx={{ maxWidth: '75vw', margin: 'auto', pb: '.5em', backgroundColor: 'white', color: 'black' }}>
           <AllInboxIcon sx={{ width: 56, height: 56 }} />
           <Typography variant="h4">How to Reach Me</Typography>
+       </Paper>
         </Grid>
         <Grid item xs={6}>
         <Paper sx={{ maxWidth: '300px', margin: 'auto', backgroundColor: '#222733', color: 'white' }} className={classes.contactButton}>
@@ -41,7 +43,7 @@ function about() {
       </Grid>
       <Grid container spacing={6} sx={{ pt: "3em", pb: "1em" }}>
         <Grid item xs={12} md={12}>
-        <Paper sx={{ maxWidth: '75vw', margin: 'auto', pb: '.5em', backgroundColor: '#222733', color: 'white' }}>
+        <Paper sx={{ maxWidth: '75vw', margin: 'auto', pb: '.5em', backgroundColor: 'white', color: 'black' }}>
             <AccessTimeIcon sx={{ width: 56, height: 56, mt: '.25em' }} />
             <Typography variant="h4" sx={{ pb: ".15em" }}>
               Tireless Work
