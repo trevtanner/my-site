@@ -59,7 +59,7 @@ export default function KnowledgeBase() {
 
   const knowledgeBase = KNOWLEDGE_DATA.map((entry) => (
     <>
-      <Typography variant="body1" color="text.primary">
+      <Typography variant="body1" color="white">
         {entry.name}
       </Typography>
       <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -84,7 +84,7 @@ export default function KnowledgeBase() {
             Knowledge Base
           </Typography>
           
-          <Typography variant="body1" color="text.primary">
+          <Typography variant="body1" color="white">
             React
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -95,11 +95,11 @@ export default function KnowledgeBase() {
                 value={reactValue}
               />
             </Box>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {reactValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="text.primary">
+          <Typography variant="body1" color="white">
             HTML/CSS
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -110,11 +110,11 @@ export default function KnowledgeBase() {
                 value={htmlcssValue}
               />
             </Box>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {htmlcssValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="text.primary">
+          <Typography variant="body1" color="white">
             PHP
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -125,11 +125,11 @@ export default function KnowledgeBase() {
                 value={phpValue}
               />
             </Box>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {phpValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="text.primary">
+          <Typography variant="body1" color="white">
             Laravel
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -140,11 +140,11 @@ export default function KnowledgeBase() {
                 value={laravelValue}
               />
             </Box>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {laravelValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="text.primary">
+          <Typography variant="body1" color="white">
             SQL
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -155,11 +155,11 @@ export default function KnowledgeBase() {
                 value={sqlValue}
               />
             </Box>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {sqlValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="text.primary">
+          <Typography variant="body1" color="white">
             AWS
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -170,11 +170,11 @@ export default function KnowledgeBase() {
                 value={awsValue}
               />
             </Box>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {awsValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="text.primary">
+          <Typography variant="body1" color="white">
             Object-Oriented Programming
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -185,7 +185,7 @@ export default function KnowledgeBase() {
                 value={oopValue}
               />
             </Box>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" color="white">
               {oopValue}%
             </Typography>
           </Box>

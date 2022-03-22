@@ -22,11 +22,12 @@ function App() {
           <About />
           <Box
             sx={{
-              backgroundColor: "white",
+              backgroundColor: "#222733",
               pb: "2em",
               width: "100%",
               paddingLeft: 0,
               paddingRight: 0,
+              color: 'white'
             }}
           >
             <KnowledgeBase />
