@@ -131,8 +131,8 @@
 .homebg {
   display: flex;
   flex-direction: column;
-  height: 90vh;
-  background-image: url("../public/images/homepage-1080.jpg");
+  height: 95vh;
+  background-image: url("../public/images/battlestation1080.jpg");
   width: 100vw;
   max-width: 100%;
   background-position: center; /* Center the image */
@@ -140,7 +140,7 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 .knowledgebg {
-  background-image: url("../public/images/oriental-tiles.png");
+  background-image: url("../public/images/webb-dark.png");
   background-position: center; /* Center the image */
   background-attachment: fixed;
 
@@ -196,10 +196,10 @@
 
 .imagetext {
   margin-top: auto;
-  color: white;
+  color: #FEFEFA;
   text-align: end;
   padding: 2em;
-  padding-bottom: 10em;
+  padding-bottom: 8em;
 }
 
 .imagetextabout {

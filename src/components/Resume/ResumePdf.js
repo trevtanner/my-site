@@ -1,7 +1,7 @@
 import { Document } from "react-pdf";
 
 function ResumePdf() {
- <Document 
+ <Document />
 }
 
 export default ResumePdf;

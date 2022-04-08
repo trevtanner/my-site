@@ -59,7 +59,7 @@ export default function KnowledgeBase() {
 
   const knowledgeBase = KNOWLEDGE_DATA.map((entry) => (
     <>
-      <Typography variant="body1" color="white">
+      <Typography variant="body1" color='#FEFEFA'>
         {entry.name}
       </Typography>
       <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -75,7 +75,7 @@ export default function KnowledgeBase() {
 
   return (
     <Container
-        sx={{ mb: "1em", pb: "1em", pt: ".5em", minWidth: "100%" }}
+        sx={{ mb: "1em", pb: "1em", pt: ".5em", minWidth: "75%", maxWidth: '90%' }}
       >
         <div>
     {/* fix issue with margins in full screen */}
@@ -84,7 +84,7 @@ export default function KnowledgeBase() {
             Knowledge Base
           </Typography>
           
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color='#FEFEFA'>
             React
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -95,11 +95,11 @@ export default function KnowledgeBase() {
                 value={reactValue}
               />
             </Box>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color='#FEFEFA'>
               {reactValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color='#FEFEFA'>
             HTML/CSS
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -110,11 +110,11 @@ export default function KnowledgeBase() {
                 value={htmlcssValue}
               />
             </Box>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color='#FEFEFA'>
               {htmlcssValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color='#FEFEFA'>
             PHP
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -125,11 +125,11 @@ export default function KnowledgeBase() {
                 value={phpValue}
               />
             </Box>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color='#FEFEFA'>
               {phpValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color='#FEFEFA'>
             Laravel
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -140,11 +140,11 @@ export default function KnowledgeBase() {
                 value={laravelValue}
               />
             </Box>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color='#FEFEFA'>
               {laravelValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color='#FEFEFA'>
             SQL
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -155,11 +155,11 @@ export default function KnowledgeBase() {
                 value={sqlValue}
               />
             </Box>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color='#FEFEFA'>
               {sqlValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color='#FEFEFA'>
             AWS
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -170,11 +170,11 @@ export default function KnowledgeBase() {
                 value={awsValue}
               />
             </Box>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color='#FEFEFA'>
               {awsValue}%
             </Typography>
           </Box>
-          <Typography variant="body1" color="white">
+          <Typography variant="body1" color='#FEFEFA'>
             Object-Oriented Programming
           </Typography>
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -185,7 +185,7 @@ export default function KnowledgeBase() {
                 value={oopValue}
               />
             </Box>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color='#FEFEFA'>
               {oopValue}%
             </Typography>
           </Box>

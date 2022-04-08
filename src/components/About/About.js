@@ -7,35 +7,33 @@ import {
   ListItemText,
   Paper,
   Typography,
+  Box
 } from "@mui/material";
 import { Fragment } from "react";
 import BookIcon from "@mui/icons-material/Book";
 
 import styles from "../../Home.module.css";
+import headshot from '../../assets/headshot.jpg'
 
 function about() {
-  let paraStyle = { width: "85%", margin: "auto" };
+  let paraStyle = { margin: "auto", color: '#FEFEFA', maxWidth: '30vw' };
 
   return (
-    <Fragment>
-      <Paper sx={{ maxWidth: "50%", margin: "auto" }}>
+    <Box sx={{padding: '2em'}}>
         <Typography
           variant="h2"
-          sx={{ textDecoration: "underline", pb: ".5em", pt: "1em" }}
+          sx={{ textDecoration: "underline", pb: ".5em", color: '#FEFEFA' }}
         >
           About Me
         </Typography>
-      </Paper>
-      <Grid container spacing={3} sx={{ pt: "1em", pb: ".5em" }}>
+      <Grid container spacing={2} sx={{ pt: "1em", pb: ".5em" }}>
           <Grid item xs={12} md={6}>
-        <Paper sx={{ maxWidth: '40vw', margin: 'auto' }}>
             <Avatar
               alt="Trevor Tanner"
-              // Add photo of self
-              src=""
-              sx={{ width: 64, height: 64, margin: "auto" }}
+              src={headshot}
+              sx={{ width: 100, height: 100, margin: "auto" }}
             />
-            <Typography variant="h4" pt=".5em">
+            <Typography variant="h4" pt=".5em" sx={{color: '#FEFEFA'}}>
               Who Am I?
             </Typography>
             <Typography variant="body1" sx={paraStyle}>
@@ -53,38 +51,35 @@ function about() {
               my issues, and I'm sure they will lend to a great final product
               for any site I am working on.
             </Typography>
-        </Paper>
           </Grid>
         <Grid item xs={12} md={6} sx={{ pb: "2em" }}>
-        <Paper sx={{ maxWidth: '40vw', margin: 'auto' }}>
-          <BookIcon sx={{ width: 64, height: 64 }} />
-          <Typography variant="h4" pt=".5em" pb=".25em">
+          <BookIcon sx={{ width: 64, height: 64, color: '#FEFEFA' }} />
+          <Typography variant="h4" pt=".5em" pb=".25em" sx={{color: '#FEFEFA'}}>
             My Top Libraries
           </Typography>
           {/* Link to pages for tools */}
-          <Typography variant="h5">MUI</Typography>
+          <Typography variant="h5" sx={{color: '#FEFEFA'}}>MUI</Typography>
           <Typography variant="body1" sx={paraStyle}>
             My most used library, almost all of my projects use it in some form
             to style my apps.
           </Typography>
-          <Typography variant="h5">React Router</Typography>
+          <Typography variant="h5" sx={{color: '#FEFEFA'}}>React Router</Typography>
           <Typography variant="body1" sx={paraStyle}>
             React Router always makes it so easy to set up multipage apps.
           </Typography>
-          <Typography variant="h5">Animation Library</Typography>
+          <Typography variant="h5" sx={{color: '#FEFEFA'}}>Animation Library</Typography>
           <Typography variant="body1" sx={paraStyle}>
             Looking for a new animation libaray with the recent React update
             rendering my pervious one obsolete.
           </Typography>
-          <Typography variant="h5">Material Icons</Typography>
+          <Typography variant="h5" sx={{color: '#FEFEFA'}}>Material Icons</Typography>
           <Typography variant="body1" sx={paraStyle}>
             Icons help any site go from boring text to an emersive experience.
             Material Icons has options for any icon you can think of.
           </Typography>
-          </Paper>
         </Grid>
       </Grid>
-    </Fragment>
+    </Box>
   );
 }
 

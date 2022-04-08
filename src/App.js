@@ -12,19 +12,7 @@ import KnowledgeBase from "./components/Homepage/KnowledgeBase";
 import PreviousWork from "./components/Portfolio/PreviousWork";
 import { Fragment, useRef } from "react";
 import { Box } from "@mui/system";
-import { createTheme } from "@mui/material";
-import { ThemeProvider } from "@emotion/react";
 
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: '#0D143C',
-        },
-        secondary: {
-            main: '#443D4C',
-        }
-    }
-})
 
 function App() {
 const homeRef = useRef();
@@ -34,7 +22,6 @@ const contactRef = useRef();
 
 
   return (
-    <ThemeProvider theme={theme}>
     <Layout>
       <Heading ref={homeRef}/>
       <div className="App">
@@ -42,12 +29,12 @@ const contactRef = useRef();
           <About ref={aboutRef}/>
           <Box
             sx={{
-              backgroundColor: "#222733",
+              backgroundColor: "#39393A",
               pb: "2em",
               width: "100%",
               paddingLeft: 0,
               paddingRight: 0,
-              color: 'white'
+              color: '#FEFEFA'
             }}
           >
             <KnowledgeBase/>
@@ -57,7 +44,6 @@ const contactRef = useRef();
         </Box>
       </div>
     </Layout>
-    </ThemeProvider>
   );
 }
 

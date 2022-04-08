@@ -13,7 +13,7 @@ function Footer() {
     <AppBar
       position="static"
       className={classes.contain}
-      sx={{ backgroundColor: "#222733", pt: '1em' }}
+      sx={{ backgroundColor: "#2C2C2C", pt: '1em' }}
     >
       <Container maxWidth="xl">
         <Typography variant="h4">

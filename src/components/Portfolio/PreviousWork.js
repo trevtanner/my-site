@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
-import { Typography } from '@mui/material';
+import { Paper, Typography } from '@mui/material';
 // import Typography from '../components/Typography';
 
 
@@ -108,7 +108,7 @@ export default function PreviousWork() {
   return (
     <Container component="section" sx={{ mt: 4, mb: 4 }}>
               <Typography variant="h4">Examples of my Previous Work</Typography>
-      <Box sx={{ mt: 4, display: 'flex', flexWrap: 'wrap' }}>
+      <Paper elevation={12} sx={{ mt: 4, display: 'flex', flexWrap: 'wrap', backgroundColor: 'transparent' }}>
         {images.map((image) => (
           <ImageIconButton
             key={image.title}
@@ -154,7 +154,7 @@ export default function PreviousWork() {
             </Box>
           </ImageIconButton>
         ))}
-      </Box>
+      </Paper>
     </Container>
   );
 }
