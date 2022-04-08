@@ -16,13 +16,13 @@ import styles from "../../Home.module.css";
 import headshot from '../../assets/headshot.jpg'
 
 function about() {
-  let paraStyle = { margin: "auto", color: '#FEFEFA', maxWidth: '30vw' };
+  let paraStyle = { margin: "auto", color: 'black', maxWidth: '30vw' };
 
   return (
     <Box sx={{padding: '2em'}}>
         <Typography
           variant="h2"
-          sx={{ textDecoration: "underline", pb: ".5em", color: '#FEFEFA' }}
+          sx={{ textDecoration: "underline", pb: ".5em", color: 'black' }}
         >
           About Me
         </Typography>
@@ -33,7 +33,7 @@ function about() {
               src={headshot}
               sx={{ width: 100, height: 100, margin: "auto" }}
             />
-            <Typography variant="h4" pt=".5em" sx={{color: '#FEFEFA'}}>
+            <Typography variant="h4" pt=".5em" sx={{color: 'black'}}>
               Who Am I?
             </Typography>
             <Typography variant="body1" sx={paraStyle}>
@@ -53,26 +53,26 @@ function about() {
             </Typography>
           </Grid>
         <Grid item xs={12} md={6} sx={{ pb: "2em" }}>
-          <BookIcon sx={{ width: 64, height: 64, color: '#FEFEFA' }} />
-          <Typography variant="h4" pt=".5em" pb=".25em" sx={{color: '#FEFEFA'}}>
+          <BookIcon sx={{ width: 64, height: 64, color: 'black' }} />
+          <Typography variant="h4" pt=".5em" pb=".25em" sx={{color: 'black'}}>
             My Top Libraries
           </Typography>
           {/* Link to pages for tools */}
-          <Typography variant="h5" sx={{color: '#FEFEFA'}}>MUI</Typography>
+          <Typography variant="h5" sx={{color: 'black'}}>MUI</Typography>
           <Typography variant="body1" sx={paraStyle}>
             My most used library, almost all of my projects use it in some form
             to style my apps.
           </Typography>
-          <Typography variant="h5" sx={{color: '#FEFEFA'}}>React Router</Typography>
+          <Typography variant="h5" sx={{color: 'black'}}>React Router</Typography>
           <Typography variant="body1" sx={paraStyle}>
             React Router always makes it so easy to set up multipage apps.
           </Typography>
-          <Typography variant="h5" sx={{color: '#FEFEFA'}}>Animation Library</Typography>
+          <Typography variant="h5" sx={{color: 'black'}}>Animation Library</Typography>
           <Typography variant="body1" sx={paraStyle}>
             Looking for a new animation libaray with the recent React update
             rendering my pervious one obsolete.
           </Typography>
-          <Typography variant="h5" sx={{color: '#FEFEFA'}}>Material Icons</Typography>
+          <Typography variant="h5" sx={{color: 'black'}}>Material Icons</Typography>
           <Typography variant="body1" sx={paraStyle}>
             Icons help any site go from boring text to an emersive experience.
             Material Icons has options for any icon you can think of.

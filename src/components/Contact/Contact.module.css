@@ -12,6 +12,10 @@
     margin: .5em;
 }
 
+.contactButton {
+    text-decoration: none;
+}
+
 .contactButton:hover {
     cursor: pointer;
     color: black;

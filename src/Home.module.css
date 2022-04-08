@@ -140,7 +140,7 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 .knowledgebg {
-  background-image: url("../public/images/webb-dark.png");
+  /* background-image: url("../public/images/webb-dark.png"); */
   background-position: center; /* Center the image */
   background-attachment: fixed;
 

@@ -33,13 +33,13 @@ function about() {
   return (
     <Container sx={{ p: '1em' }}>
       <Grid container spacing={5} className={classes.main}>
-        <Grid item xs={12} sx={{color: '#FEFEFA'}}>
+        <Grid item xs={12} sx={{color: 'black'}}>
           <AllInboxIcon sx={{ width: 56, height: 56 }} />
           <Typography variant="h4">How to Reach Me</Typography>
         </Grid>
         <Grid item xs={6}>
         <IconButton>
-        <Paper elevation={12} sx={{ backgroundColor: '#39393A', color: '#FEFEFA', width: '100%' }} className={classes.contactButton}>
+        <Paper component='a' href="mailto:trevor@trevorstanner.com?subject=Reaching Out" elevation={12} sx={{ backgroundColor: '#39393A', color: 'white', width: '100%' }} className={classes.contactButton}>
           <SendIcon sx={{ pt: '.25em' }}/>
           <Typography variant="h6" pb='.25em'>Send me an Email</Typography>
           </Paper>
@@ -47,21 +47,23 @@ function about() {
         </Grid>
         <Grid item xs={6}>
           <IconButton>
-        <Paper elevation={12} sx={{ width: '100%', margin: 'auto', backgroundColor: '#39393A', color: '#FEFEFA' }} className={classes.contactButton}>
+            {/* <a href='../Resume/Trevor-Tanner-Resume(Official).pdf' download> */}
+        <Paper component='a' href='../Resume/Trevor-Tanner-Resume(Official).pdf' elevation={12} sx={{ width: '100%', margin: 'auto', backgroundColor: '#39393A', color: 'white' }} className={classes.contactButton} download>
           <FilePresentIcon sx={{ pt: '.25em' }}/>
-          <Typography variant="h6" pb='.25em'>View my Resume</Typography>
+          <Typography variant="h6" pb='.25em'>Download my Resume</Typography>
           </Paper>
+          {/* </a> */}
           </IconButton>
         </Grid>
       </Grid>
       <Grid container spacing={6} sx={{ pt: "3em", pb: "1em" }}>
         <Grid item xs={12} md={12}>
-        <Paper sx={{ maxWidth: '50vw', margin: 'auto', pb: '.5em', backgroundColor: 'transparent', color: '#FEFEFA' }}>
+        <Paper sx={{ maxWidth: '50vw', margin: 'auto', pb: '.5em', backgroundColor: '#39393A', color: 'white' }}>
             <AccessTimeIcon sx={{ width: 56, height: 56, mt: '.25em' }} />
             <Typography variant="h4" sx={{ pb: ".15em" }}>
               Tireless Work
             </Typography>
-            <Typography varaiant="body1" sx={{ width: "80%", margin: "auto" }}>
+            <Typography variant="body2" sx={{ width: "80%", margin: "auto" }}>
               I will work day and night to get the product created that you want
               and fits your needs. Always built to your specifications and
               paired with unrivaled support.
