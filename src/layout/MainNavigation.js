@@ -17,6 +17,7 @@ import TTlogo from '../assets/TTlogoBlkBG50.jpg'
 function MainNavigation() {
   const [anchorElNav, setAnchorElNav] = React.useState(null)
   const [anchorElUser, setAnchorElUser] = React.useState(null)
+  let scrollRef = ""
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget)
@@ -33,13 +34,17 @@ function MainNavigation() {
     setAnchorElUser(null)
   }
 
-  const scrollTo = () => {
+  const scrollToHome = () => {
     return
+  }
+
+  const scrollToContact = () => {
+    return  scrollRef = 'homeRef'
   }
 
   return (
     <AppBar
-      position="static"
+      position="sticky"
       className={classes.contain}
       sx={{ backgroundColor: '#2C2C2C' }}
     >
@@ -85,12 +90,12 @@ function MainNavigation() {
             >
               <MenuItem>
                 <Typography textAlign="right">
-                  <Button sx={{ display: 'block' }} onClick={scrollTo}>
+                  <Button sx={{ display: 'block' }} onClick={scrollToHome}>
                     Home
                   </Button>
                   <Button sx={{ display: 'block' }}>About</Button>
                   <Button sx={{ display: 'block' }}>Portfolio</Button>
-                  <Button sx={{ display: 'block' }}>Contact</Button>
+                  <Button sx={{ display: 'block' }}>Contact onClick={scrollToContact}</Button>
                 </Typography>
               </MenuItem>
               {/* {pages.map((page) => (

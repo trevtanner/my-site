@@ -20,6 +20,10 @@ const aboutRef = useRef();
 const portfolioRef = useRef();
 const contactRef = useRef();
 
+function handleBackClick(props) {
+  props.current.scrollIntoView({ behavior: 'smooth' })
+}
+
 
   return (
     <Layout>

@@ -200,6 +200,7 @@
   text-align: end;
   padding: 2em;
   padding-bottom: 8em;
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
 }
 
 .imagetextabout {

@@ -36,7 +36,7 @@ function about() {
             <Typography variant="h4" pt=".5em" sx={{color: 'black'}}>
               Who Am I?
             </Typography>
-            <Typography variant="body1" sx={paraStyle}>
+            <Typography variant="body2" sx={paraStyle}>
               Programming is my passion, and love to work and projects even in
               my free time. When I&apos;m not writing code I&apos;m working on
               my PC, or playing video games. My first job in the industry was
@@ -58,22 +58,22 @@ function about() {
             My Top Libraries
           </Typography>
           {/* Link to pages for tools */}
-          <Typography variant="h5" sx={{color: 'black'}}>MUI</Typography>
-          <Typography variant="body1" sx={paraStyle}>
+          <Typography variant="h6" sx={{color: 'black'}}>MUI</Typography>
+          <Typography variant="body2" sx={paraStyle}>
             My most used library, almost all of my projects use it in some form
             to style my apps.
           </Typography>
-          <Typography variant="h5" sx={{color: 'black'}}>React Router</Typography>
-          <Typography variant="body1" sx={paraStyle}>
+          <Typography variant="h6" sx={{color: 'black'}}>React Router</Typography>
+          <Typography variant="body2" sx={paraStyle}>
             React Router always makes it so easy to set up multipage apps.
           </Typography>
-          <Typography variant="h5" sx={{color: 'black'}}>Animation Library</Typography>
-          <Typography variant="body1" sx={paraStyle}>
+          <Typography variant="h6" sx={{color: 'black'}}>Animation Library</Typography>
+          <Typography variant="body2" sx={paraStyle}>
             Looking for a new animation libaray with the recent React update
             rendering my pervious one obsolete.
           </Typography>
-          <Typography variant="h5" sx={{color: 'black'}}>Material Icons</Typography>
-          <Typography variant="body1" sx={paraStyle}>
+          <Typography variant="h6" sx={{color: 'black'}}>Material Icons</Typography>
+          <Typography variant="body2" sx={paraStyle}>
             Icons help any site go from boring text to an emersive experience.
             Material Icons has options for any icon you can think of.
           </Typography>
