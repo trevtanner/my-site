@@ -12,6 +12,9 @@ ReactDOM.render(
     <Routes>
       <Route path='/' element={<App />} />
       <Route path='/resume' element={<ResumePdf />} />
+      {/* <Route path='/c-trak' element={<CTrak />} />
+      <Route path='/t-dex' element={<TDexIndex />} /> */}
+
     
     </Routes>
     </BrowserRouter>

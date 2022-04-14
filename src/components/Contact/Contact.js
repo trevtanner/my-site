@@ -1,16 +1,10 @@
 import {
   Container,
-  List,
-  ListItemText,
   Grid,
-  Button,
   Typography,
-  Box,
   Paper,
 } from "@mui/material";
-import { Fragment } from "react";
 import classes from "./Contact.module.css";
-import styles from "../../Home.module.css";
 import SendIcon from "@mui/icons-material/Send";
 import FilePresentIcon from "@mui/icons-material/FilePresent";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
@@ -39,7 +33,7 @@ function about() {
         </Grid>
         <Grid item xs={6}>
         <IconButton>
-        <Paper component='a' href="mailto:trevor@trevorstanner.com?subject=Reaching Out" elevation={12} sx={{ backgroundColor: '#39393A', color: 'white', width: '100%' }} className={classes.contactButton}>
+        <Paper component='a' href="mailto:trevor@trevorstanner.com?subject=Reaching Out" elevation={12} sx={{ backgroundColor: '#39393A', color: 'white', width: '100%', minWidth: '200px' }} className={classes.contactButton}>
           <SendIcon sx={{ pt: '.25em' }}/>
           <Typography variant="h6" pb='.25em'>Send me an Email</Typography>
           </Paper>
@@ -47,12 +41,10 @@ function about() {
         </Grid>
         <Grid item xs={6}>
           <IconButton>
-            {/* <a href='../Resume/Trevor-Tanner-Resume(Official).pdf' download> */}
-        <Paper component='a' href='../Resume/Trevor-Tanner-Resume(Official).pdf' elevation={12} sx={{ width: '100%', margin: 'auto', backgroundColor: '#39393A', color: 'white' }} className={classes.contactButton} download>
+        <Paper component='a' href='../Resume/Trevor-Tanner-Resume(Official).pdf' elevation={12} sx={{ width: '100%', backgroundColor: '#39393A', color: 'white', minWidth: '200px' }} className={classes.contactButton} download>
           <FilePresentIcon sx={{ pt: '.25em' }}/>
-          <Typography variant="h6" pb='.25em'>Download my Resume</Typography>
+          <Typography variant="h6" pb='.25em' >Download Resume</Typography>
           </Paper>
-          {/* </a> */}
           </IconButton>
         </Grid>
       </Grid>
