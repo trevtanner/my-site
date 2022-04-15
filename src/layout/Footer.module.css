@@ -11,7 +11,12 @@
   color: white;
 }
 
+.icons {
+  color: white;
+}
+
 .icons:hover{
   color: grey;
   cursor: pointer;
 }
+

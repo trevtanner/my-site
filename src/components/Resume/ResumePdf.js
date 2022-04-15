@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { Document, Page, pdfjs } from "react-pdf";
 import Layout from "../../layout/layout";
-import Resume from './Trevor-Tanner-Resume(Official).pdf'
+import Resume from './TrevorTannerResume.pdf'
 
 
 

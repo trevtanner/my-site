@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ResumePdf from './components/Resume/ResumePdf';
+import Privacy from './Pages/Privacy';
 
 
 ReactDOM.render(
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Routes>
       <Route path='/' element={<App />} />
       <Route path='/resume' element={<ResumePdf />} />
+      <Route path='/privacy' element={<Privacy />} />
       {/* <Route path='/c-trak' element={<CTrak />} />
       <Route path='/t-dex' element={<TDexIndex />} /> */}
 

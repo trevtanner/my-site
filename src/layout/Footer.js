@@ -1,25 +1,26 @@
-import { Button, Container, AppBar, Typography } from "@mui/material";
+import { Button, Container, AppBar, Typography } from '@mui/material'
+import { Link } from '@mui/material'
 
-import GitHubIcon from "@mui/icons-material/GitHub";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from '@mui/icons-material/GitHub'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import EmailIcon from '@mui/icons-material/Email'
 
-import classes from "./Footer.module.css";
+import classes from './Footer.module.css'
 
 function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
   return (
     <AppBar
       position="static"
       className={classes.contain}
-      sx={{ backgroundColor: "#2C2C2C", pt: '1em' }}
+      sx={{ backgroundColor: '#2C2C2C', pt: '1em' }}
     >
       <Container maxWidth="xl">
         <Typography variant="h4">
           Building great websites for all of your needs.
         </Typography>
-        <Typography variant="h5" sx={{ fontStyle: "italic" }}>
+        <Typography variant="h5" sx={{ fontStyle: 'italic' }}>
           Let&apos;s get started today.
         </Typography>
         {/* <Container sx={{ padding: '.5em' }}>
@@ -43,22 +44,47 @@ function Footer() {
           Contact
         </Button>
         </Container> */}
+
+        <Link
+          href="https://www.github.com/trevtanner"
+          target="_blank"
+        >
           <GitHubIcon
             fontSize="large"
             className={classes.icons}
-            target="https://www.github.com"
+
           />
+        </Link>
 
-          <TwitterIcon fontSize="large" className={classes.icons} />
 
-          <LinkedInIcon fontSize="large" className={classes.icons} />
+        <Link
+          href="https://www.twitter.com/trevtanner"
+          target="_blank"
+        >
+        <TwitterIcon
+          fontSize="large"
+          className={classes.icons}
 
-          {/* <Link href="mailto:trevor.tanner.developer@gmail.com" passHref> */}
-          <EmailIcon fontSize="large" className={classes.icons} />
-          {/* </Link> */}
+        />
+        </Link>
+
+        <Link
+          href="https://www.linkedin.com/in/trevorstanner"
+          target="_blank"
+        >
+        <LinkedInIcon
+          fontSize="large"
+          className={classes.icons}
+
+        />
+        </Link>
+
+        {/* <Link href="mailto:trevor.tanner.developer@gmail.com" >
+        <EmailIcon fontSize="large" className={classes.icons} />
+        </Link> */}
         <Typography variant="body1">
-          Full stack developer using React.js along with Next.js to build
-          stunning single and multi page apps.
+          Full stack developer using React.js to build stunning single and multi
+          page apps.
         </Typography>
         <Typography variant="body2">
           Trevor Tanner© {currentYear} Copyright TT Web Development and Design
@@ -66,7 +92,7 @@ function Footer() {
         </Typography>
       </Container>
     </AppBar>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

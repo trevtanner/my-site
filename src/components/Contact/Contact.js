@@ -41,7 +41,7 @@ function about() {
         </Grid>
         <Grid item xs={6}>
           <IconButton>
-        <Paper component='a' href='../Resume/Trevor-Tanner-Resume(Official).pdf' elevation={12} sx={{ width: '100%', backgroundColor: '#39393A', color: 'white', minWidth: '200px' }} className={classes.contactButton} download>
+        <Paper component='a' href='../Resume/TrevorTannerResume.pdf' elevation={12} sx={{ width: '100%', backgroundColor: '#39393A', color: 'white', minWidth: '200px' }} className={classes.contactButton} download>
           <FilePresentIcon sx={{ pt: '.25em' }}/>
           <Typography variant="h6" pb='.25em' >Download Resume</Typography>
           </Paper>
