@@ -31,17 +31,17 @@ function about() {
           <AllInboxIcon sx={{ width: 56, height: 56 }} />
           <Typography variant="h4">How to Reach Me</Typography>
         </Grid>
-        <Grid item xs={6}>
-        <IconButton>
-        <Paper component='a' href="mailto:trevor@trevorstanner.com?subject=Reaching Out" elevation={12} sx={{ backgroundColor: '#39393A', color: 'white', width: '100%', minWidth: '200px' }} className={classes.contactButton}>
+        <Grid item xs={12} sm={12} md={6}>
+        <IconButton sx={{ width: '100%' }}>
+        <Paper component='a' href="mailto:trevor@trevorstanner.com?subject=Reaching Out" elevation={12} sx={{ backgroundColor: '#39393A', color: 'white', width: '100%' }} className={classes.contactButton}>
           <SendIcon sx={{ pt: '.25em' }}/>
           <Typography variant="h6" pb='.25em'>Send me an Email</Typography>
           </Paper>
           </IconButton>
         </Grid>
-        <Grid item xs={6}>
-          <IconButton>
-        <Paper component='a' href='../Resume/TrevorTannerResume.pdf' elevation={12} sx={{ width: '100%', backgroundColor: '#39393A', color: 'white', minWidth: '200px' }} className={classes.contactButton} download>
+        <Grid item xs={12} sm={12} md={6}>
+          <IconButton sx={{ width: '100%' }}>
+        <Paper component='a' href='../Resume/TrevorTannerResume.pdf' elevation={12} sx={{ width: '100%', backgroundColor: '#39393A', color: 'white' }} className={classes.contactButton} download>
           <FilePresentIcon sx={{ pt: '.25em' }}/>
           <Typography variant="h6" pb='.25em' >Download Resume</Typography>
           </Paper>
@@ -49,7 +49,7 @@ function about() {
         </Grid>
       </Grid>
       <Grid container spacing={6} sx={{ pt: "3em", pb: "1em" }}>
-        <Grid item xs={12} md={12}>
+        <Grid item xs={12} sm={12} md={12}>
         <Paper sx={{ maxWidth: '50vw', margin: 'auto', pb: '.5em', backgroundColor: '#39393A', color: 'white' }}>
             <AccessTimeIcon sx={{ width: 56, height: 56, mt: '.25em' }} />
             <Typography variant="h4" sx={{ pb: ".15em" }}>
