@@ -5,6 +5,7 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import { Paper, Typography } from '@mui/material';
 // import Typography from '../components/Typography';
+import { Link } from 'react-router-dom';
 
 
 
@@ -61,16 +62,19 @@ const images = [
     url: 'https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3J5cHRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=80',
     title: 'Crypto Tracker',
     width: '33.3%',
+    link: '/c-trak'
   },
   {
     url: 'https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYXRoZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=80',
     title: 'Weather App',
     width: '33.3%',
+    link: '/ttweather'
   },
   {
     url: 'https://images.unsplash.com/photo-1542779283-429940ce8336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
     title: "Trevor's Pokedex",
     width: '33.3%',
+    link: '/t-dex'
   },
 //   {
 //     url: 'image url',
@@ -111,6 +115,8 @@ export default function PreviousWork() {
       <Paper elevation={12} sx={{ mt: 4, display: 'flex', flexWrap: 'wrap', backgroundColor: 'transparent' }}>
         {images.map((image) => (
           <ImageIconButton
+          component={Link}
+          to={image.link}
             key={image.title}
             style={{
               width: image.width,

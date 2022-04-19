@@ -5,6 +5,9 @@ import App from './App';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ResumePdf from './components/Resume/ResumePdf';
 import Privacy from './Pages/Privacy';
+import CTrak from './Pages/CTrak'
+import TDex from './Pages/TDex'
+import TTWeather from './Pages/TTWeather'
 
 
 ReactDOM.render(
@@ -12,12 +15,11 @@ ReactDOM.render(
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<App />} />
-      <Route path='/resume' element={<ResumePdf />} />
-      <Route path='/privacy' element={<Privacy />} />
-      {/* <Route path='/c-trak' element={<CTrak />} />
-      <Route path='/t-dex' element={<TDexIndex />} /> */}
-
-    
+      <Route path='resume' element={<ResumePdf />} />
+      <Route path='privacy' element={<Privacy />} />
+      {/* <Route path='c-trak' element={<CTrak />} /> */}
+      <Route path='t-dex/*' element={<TDex />} />
+      <Route path='ttweather' element={<TTWeather />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

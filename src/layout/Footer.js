@@ -1,5 +1,6 @@
 import { Button, Container, AppBar, Typography } from '@mui/material'
 import { Link } from '@mui/material'
+import { Link as RouterLink } from 'react-router-dom'
 
 import GitHubIcon from '@mui/icons-material/GitHub'
 import TwitterIcon from '@mui/icons-material/Twitter'
@@ -88,7 +89,7 @@ function Footer() {
         </Typography>
         <Typography variant="body2">
           Trevor Tanner© {currentYear} Copyright TT Web Development and Design
-          <Button className={classes.links}>Privacy Policy</Button>
+          <Button component={RouterLink} to='/privacy' className={classes.links}>Privacy Policy</Button>
         </Typography>
       </Container>
     </AppBar>
