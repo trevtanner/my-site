@@ -15,11 +15,7 @@ import PreviousWork from "./PreviousWork";
 
 function Portfolio() {
   return (
-    <Fragment>
-      <Container>
         <PreviousWork/>
-      </Container>
-    </Fragment>
   );
 }
 

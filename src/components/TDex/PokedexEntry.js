@@ -8,7 +8,7 @@ import {
   Container,
   Button
 } from '@mui/material'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../../layout/Footer'
 import classes from './PokedexEntry.module.css'
@@ -20,6 +20,7 @@ function PokedexEntry() {
   const [type, setType] = useState('')
   const [secondType, setSecondType] = useState('')
   const [dex, setDex] = useState('')
+
   const url = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1)
 
   //https://bigsondev.com/blog/how-to-fetch-data-in-react-using-pokeapi/

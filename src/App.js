@@ -15,10 +15,6 @@ import { Box } from "@mui/system";
 
 
 function App() {
-const homeRef = useRef();
-const aboutRef = useRef();
-const portfolioRef = useRef();
-const contactRef = useRef();
 
 function handleBackClick(props) {
   props.current.scrollIntoView({ behavior: 'smooth' })
@@ -27,25 +23,22 @@ function handleBackClick(props) {
 
   return (
     <Layout>
-      <Heading ref={homeRef}/>
+      <Heading />
       <div className="App">
-        <Box fluid className={styles.knowledgebg}>
-          <About ref={aboutRef}/>
+        <Box fluid className={styles.knowledgebg} />
+          <About />
           <Box
             sx={{
               backgroundColor: "#39393A",
-              pb: "2em",
+              pb: "3em",
               width: "100%",
-              paddingLeft: 0,
-              paddingRight: 0,
               color: '#FEFEFA'
             }}
           >
             <KnowledgeBase/>
-            <PreviousWork ref={portfolioRef}/>
+            <PreviousWork/>
           </Box>
-          <Contact ref={contactRef}/>
-        </Box>
+          <Contact/>
       </div>
     </Layout>
   );
