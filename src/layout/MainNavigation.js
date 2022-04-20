@@ -17,7 +17,6 @@ import TTlogo from '../assets/TTlogoBlkBG50.jpg'
 function MainNavigation() {
   const [anchorElNav, setAnchorElNav] = React.useState(null)
   const [anchorElUser, setAnchorElUser] = React.useState(null)
-  let scrollRef = ""
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget)
@@ -34,12 +33,12 @@ function MainNavigation() {
     setAnchorElUser(null)
   }
 
-  const scrollToHome = () => {
-    return
-  }
-
-  const scrollToContact = () => {
-    return  scrollRef = 'homeRef'
+  const scrollToTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
 
   return (
@@ -90,12 +89,12 @@ function MainNavigation() {
             >
               <MenuItem>
                 <Typography textAlign="right">
-                  <Button sx={{ display: 'block' }} onClick={scrollToHome}>
+                  <Button sx={{ display: 'block' }} onClick={scrollToTop}>
                     Home
                   </Button>
                   <Button sx={{ display: 'block' }}>About</Button>
                   <Button sx={{ display: 'block' }}>Portfolio</Button>
-                  <Button sx={{ display: 'block' }}>Contact onClick={scrollToContact}</Button>
+                  <Button sx={{ display: 'block' }}>Contact</Button>
                 </Typography>
               </MenuItem>
               {/* {pages.map((page) => (
@@ -116,7 +115,7 @@ function MainNavigation() {
             TT Web Development
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={scrollToTop}>
               Home
             </Button>
             <Button sx={{ my: 2, color: 'white', display: 'block' }}>

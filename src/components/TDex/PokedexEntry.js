@@ -175,7 +175,7 @@ function PokedexEntry() {
         </Grid>
       </CardContent>
     </Card>
-    <Button component={Link} to='/t-dex' variant="outlined" color='error' size="large">BACK</Button>
+    <Button component={Link} to='/t-dex' variant="outlined" color='error' size="large">PokeDex</Button>
     </Container>
   )
 }

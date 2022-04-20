@@ -2,6 +2,10 @@ import "./TTWeather.css";
 import React, { Fragment, useEffect, useState, useRef} from "react";
 import Weather from "../components/TTWeather/Weather";
 import Footer from "../layout/Footer";
+import { Container, Paper } from '@mui/material'
+import Header from "../components/TTWeather/Header";
+
+
 
 export default function App() {
   // const [lat, setLat] = useState([]);
@@ -37,18 +41,15 @@ export default function App() {
   }
 
     return (
-      <Fragment>
-        <header>
-          <h1>
-          TT Weather App
-          </h1>
-        </header>
+      <>
+        <Header />
+          <Container sx={{ pt: '2em', pb: '2em', height: '70.2vh'}} className="body">
         <div className="App centered grid">
-              <div className="ui input">
+              <Paper elevation={12} sx={{ mb: '2em', p: '.5em', background: '#01579B', color: 'white' }}>
                 <form onSubmit={formSubmitHandler}>
                   <label htmlFor="city">
                     City: 
-                    <div className="ui input">
+                    <div>
                     <input
                       type="text"
                       id="city"
@@ -56,11 +57,11 @@ export default function App() {
                     />
                     </div>
                   </label>
-                  <button className="ui button">Submit</button>
+                  <button>Submit</button>
                 </form>
-              </div>
+              </Paper>
           {typeof data.main != "undefined" ? (
-            <Weather weatherData={data} />
+            <Weather weatherData={data}/>
           ) : (
             <div>
               {/* <Dimmer active>
@@ -69,7 +70,8 @@ export default function App() {
             </div>
           )}
         </div>
+        </Container>
         <Footer />
-      </Fragment>
+      </>
     );
   };
