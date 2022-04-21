@@ -82,7 +82,9 @@ function PokedexEntry() {
     )
   }
 
-  function fixNames(entries) {
+
+    function fixNames(entries) {
+      try {
     if (entries.name === 'nidoran-f') {
       return (entries.name = 'Nidoran')
     }
@@ -98,25 +100,41 @@ function PokedexEntry() {
     else {
       return entries.name.charAt(0).toUpperCase() + entries.name.slice(1)
     }
+  } catch (e) {
+    setError(e.message || 'Something went wrong')
+  }
   }
 
   function fixHeight(entries) {
+  try {
     var inches = (entries.height * 10 * 0.393700787).toFixed(0)
     var ft = Math.floor(inches / 12)
     inches %= 12
     return `${ft}' ${inches}"`
+  } catch (e) {
+    setError(e.message || 'Something went wrong')
+  }
   }
   function fixWeight(entries) {
+    try {
     const weight = ((entries.weight / 10) * 2.20462).toFixed(1)
     return weight
+    } catch (e) {
+      setError(e.message || 'Something went wrong')
+    }
   }
 
   function fixID(entries) {
+    try {
     var id = ('00' + entries.id).slice(-3)
     return id
+  } catch (e) {
+    setError(e.message || 'Something went wrong')
   }
+}
 
   function fixTypes(type, secondType) {
+    try {
     if (!secondType) {
       const fixedType = type.charAt(0).toUpperCase() + type.slice(1)
       return fixedType
@@ -129,7 +147,11 @@ function PokedexEntry() {
         secondType.slice(1)
       return fixedType
     }
+  } catch (e) {
+    setError(e.message || 'Something went wrong')
   }
+}
+
 
   return (
     <Container fixed align="center" sx={{ pt: '1em', pb: '10em' }}>

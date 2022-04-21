@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Container } from '@mui/material'
-import scrollToTop from '../components/scrollToTop'
+import ScrollToTop from '../components/ScrollToTop'
 
 
 import classes from './TDex.module.css';
@@ -15,7 +15,7 @@ function App() {
     <div>
     <Header />
     <Container className={classes.body}>
-      <scrollToTop />
+      <ScrollToTop />
     <Routes>
     <Route exact path='/' element={<Home />}/>
     <Route path=':name' element={<PokedexEntry />}/>
