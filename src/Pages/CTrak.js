@@ -11,23 +11,15 @@ import Resources from "../components/CTrak/Resources/Resources";
 
 function CTrak() {
     return (
-  <body>
-    <div className="content">
-    <section id="heading">
+  <>
       <Heading />
-    </section>
-    <section className="body">
     <Routes>
     <Route path='/' element={<App />} />
     <Route path='/prices' element={<Prices />} />
     <Route path='/resources' element={<Resources />} />
     </Routes>
-    </section>
-    </div>
-    <section className="footer">
       <Footer />
-    </section>
-  </body>
+  </>
 );
 }
 

@@ -1,42 +1,63 @@
 import React from "react";
 import classes from "./Heading.module.css";
-import Button from "../Button.js";
-import { Container, Navbar } from "react-bootstrap";
 import FadeIn from "react-fade-in";
 import { Link } from "react-router-dom";
-import { HeaderSubheader } from "semantic-ui-react";
+import { AppBar, Box, IconButton, Toolbar, Button, Container, Typography, Grid } from "@mui/material";
 
 const Heading = (props) => {
   return (
-    // <header className={classes.title}>
-    //   <Navbar>
-    //     <Container>
-    //       <FadeIn>
-    //       <Link to="/" className={classes.link}>
-    //       <h1>C-Trak</h1>
-    //       </Link>
-    //       </FadeIn>
-    //       <Navbar.Toggle />
-    //       <Navbar.Collapse className="justify-content-end">
-    //         <Navbar.Text>
-    //         <FadeIn>
-    //           {/* <Button>Login</Button> */}
-    //           <Link to="/" className={classes.link}>
-    //             <p>Tracker</p>
-    //           </Link>
-    //           <Link to="/prices" className={classes.link}>
-    //             <p>Prices</p>
-    //           </Link>
-    //           <Link to="/resources" className={classes.link}>
-    //             <p>Resources</p>
-    //           </Link>
-    //           </FadeIn>
-    //         </Navbar.Text>
-    //       </Navbar.Collapse>
-    //     </Container>
-    //   </Navbar>
-    // </header>
-    <header className={classes.title}>
+    <Box position="sticky" sx={{ }}>
+    <AppBar position="sticky" sx={{ backgroundColor: '#1B2A41' }}>
+      <Toolbar>
+        <Grid container>
+          <Grid item xs={5} sx={{ textAlign: 'start' }}> 
+          <Button component={Link} to='/c-trak' color='inherit' size='small'>Tracker</Button>
+          <Button component={Link} to='/c-trak/prices' color='inherit' size='small'>Prices</Button>
+          <Button component={Link} to='/c-trak/resources' color='inherit' size='small'>Resources</Button>
+          </Grid>
+          <Grid item xs={2} sx={{ textAlign: 'center' }}>
+          <Typography
+            variant="h5"
+            noWrap
+            component="div"
+          >
+            C-Trak
+          </Typography>
+          </Grid>
+          <Grid item xs={5} sx={{ textAlign: 'end' }}>
+            <Button component={Link} to="/" variant="contained" color='error' size='small'>
+              EXIT
+            </Button>
+          </Grid>
+        </Grid>
+      </Toolbar>
+    </AppBar>
+  </Box>
+
+
+    /* <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" sx={{ backgroundColor: '#1B2A41' }}>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Typography
+            variant="h5"
+            noWrap
+            component="div"
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+          >
+            C-Trak
+          </Typography>
+          <Button component={Link} to='/c-trak' color='inherit' size='small'>Tracker</Button>
+          <Button component={Link} to='/c-trak/prices' color='inherit' size='small'>Prices</Button>
+          <Button component={Link} to='/c-trak/resources' color='inherit' size='small'>Resources</Button>
+        <Button component={Link} to='/' color='inherit' size='small'>Exit</Button>
+        </Toolbar>
+        </Container>
+      </AppBar>
+    </Box> */
+
+
+    /* <header className={classes.title}>
         <div class="ui inverted secondary pointing menu">
           <div className="header item">
             <h1>{process.env.REACT_APP_TITLE}</h1>
@@ -52,7 +73,7 @@ const Heading = (props) => {
           </Link>
         </div>
 
-    </header>
+    </header> */
   );
 };
 
