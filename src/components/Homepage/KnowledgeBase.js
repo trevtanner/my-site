@@ -57,22 +57,6 @@ export default function KnowledgeBase() {
   const oopValue = 65;
   const awsValue = 55;
 
-  const knowledgeBase = KNOWLEDGE_DATA.map((entry) => (
-    <>
-      <Typography variant="body1" color='#FEFEFA'>
-        {entry.name}
-      </Typography>
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box sx={{ width: "100%", mr: 1 }}>
-          <LinearProgress variant={entry.color} value={entry.value} />
-        </Box>
-        <Typography variant="body2" color="text.secondary">
-          {entry.value}%
-        </Typography>
-      </Box>
-    </>
-  ));
-
   return (
     <Container
         sx={{ mb: "1em", pb: "1em", pt: ".5em", minWidth: "75%", maxWidth: '90%' }}

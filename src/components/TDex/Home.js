@@ -15,7 +15,7 @@ const [genSelect, setGenSelect] = useState('')
   }
 
     return (
-        <Container sx={{ textAlign: 'center', pb: '4em' }}>
+        <Container sx={{ textAlign: 'center', pb: '2em' }}>
      <h1>PokeDex</h1>
      <Grid container>
      <Grid item xs={4} lg={3} sx={{ width: '100%' }}>

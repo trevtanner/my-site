@@ -64,9 +64,7 @@ export default function App() {
             <Weather weatherData={data}/>
           ) : (
             <div>
-              {/* <Dimmer active>
-                <Loader>Loading..</Loader>
-              </Dimmer> */}
+
             </div>
           )}
         </div>

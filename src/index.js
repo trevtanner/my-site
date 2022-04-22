@@ -17,7 +17,7 @@ ReactDOM.render(
       <Route path='/' element={<App />} />
       <Route path='resume' element={<ResumePdf />} />
       <Route path='privacy' element={<Privacy />} />
-      {/* <Route path='c-trak' element={<CTrak />} /> */}
+      <Route path='c-trak/*' element={<CTrak />} />
       <Route path='t-dex/*' element={<TDex />} />
       <Route path='ttweather' element={<TTWeather />} />
     </Routes>

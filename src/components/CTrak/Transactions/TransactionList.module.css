@@ -1,0 +1,23 @@
+.users {
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.users ul {
+  list-style: none;
+  padding: .5rem;
+  width: 90%;
+  margin: auto;
+}
+
+.users li {
+  border: 1px solid #ccc;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+}
+
+.users h1 {
+  text-align: center;
+  color: #2b5363;
+  padding-top: .5em;
+}

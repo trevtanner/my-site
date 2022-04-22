@@ -65,10 +65,12 @@ function PokedexEntry() {
     }
     fetchData()
     fetchDex()
+    
+   
     return () => {
       isMounted = false
     }
-  }, [])
+  }, [url, entries, type, secondType ]);
 
   if (error) {
     return <Alert severity="error">{error}</Alert>
@@ -152,6 +154,12 @@ function PokedexEntry() {
   }
 }
 
+const Name = fixNames(entries)
+const Height = fixHeight(entries)
+const Weight = fixWeight(entries)
+const ID = fixID(entries)
+const Types = fixTypes(type, secondType)
+
 
   return (
     <Container fixed align="center" sx={{ pt: '1em', pb: '10em' }}>
@@ -166,8 +174,8 @@ function PokedexEntry() {
             />
           </Grid>
           <Grid item xs={6} align="center">
-            <Typography variant="h3">{fixNames(entries)}</Typography>
-            <Typography variant="h5">#{fixID(entries)}</Typography>
+            <Typography variant="h3">{Name}</Typography>
+            <Typography variant="h5">#{ID}</Typography>
           </Grid>
           <Grid item xs={6}>
           <Typography variant="h6" sx={{ textDecoration: 'underline' }}>
@@ -175,17 +183,17 @@ function PokedexEntry() {
             </Typography>
             <Grid item xs={12} align="center">
             <Typography variant="p">
-              Type: {fixTypes(type, secondType)}
+              Type: {Types}
             </Typography>
             </Grid>
             <Grid item xs={12} align="center">
             <Typography variant="p">
-              Height: {fixHeight(entries)}
+              Height: {Height}
             </Typography>
             </Grid>
             <Grid item xs={12} align="center">
             <Typography variant="p">
-              Weight: {fixWeight(entries)} lbs.
+              Weight: {Weight} lbs.
             </Typography>
             </Grid>
           </Grid>
