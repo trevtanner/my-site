@@ -5,6 +5,7 @@ import {
   Grid,
   CircularProgress,
   Button,
+  Divider
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import DexListItem from "./DexListItem";
@@ -47,19 +48,25 @@ function PokedexList() {
   }
 
   const pokemonList = entries.map((entry) => (
-    <DexListItem key={entry.url} name={entry.name} number={entries.indexOf(entry)} />
+    <>
+      <DexListItem
+        key={entry.url}
+        name={entry.name}
+        number={entries.indexOf(entry)}
+      />
+      <Divider />
+    </>
   ));
 
   const scrollToTop = (event) => {
     event.preventDefault();
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
-  }
+  };
 
   return (
-
     <Box sx={{ width: "100%", maxWidth: "700px", margin: "auto" }}>
       <nav aria-label="">
         <List>
@@ -79,9 +86,15 @@ function PokedexList() {
           {pokemonList}
         </List>
       </nav>
-      <Button variant="contained" size="large" sx={{mt: '2em', backgroundColor: 'red'}} onClick={scrollToTop}>TOP</Button>
+      <Button
+        variant="contained"
+        size="large"
+        sx={{ mt: "2em", backgroundColor: "red" }}
+        onClick={scrollToTop}
+      >
+        TOP
+      </Button>
     </Box>
-  
   );
 }
 export default PokedexList;
