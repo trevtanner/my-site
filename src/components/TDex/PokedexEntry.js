@@ -205,7 +205,7 @@ const Types = fixTypes(type, secondType)
         </Grid>
       </CardContent>
     </Card>
-    <Button component={Link} to='/t-dex' variant="outlined" color='error' size="large">PokeDex</Button>
+    <Button component={Link} to='/t-dex' variant="outlined" color='error' size="large" className={classes.back}>PokeDex</Button>
     </Container>
   )
 }

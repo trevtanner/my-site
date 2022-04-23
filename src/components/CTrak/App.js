@@ -6,6 +6,7 @@ import TransactionList from "./Transactions/TransactionList";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import TotalsNav from "./Totals/TotalsNav";
+import { Container } from "@mui/material";
 
 const App = () => {
   const [transactionsList, setTransactionsList] = useState([]);
@@ -62,8 +63,7 @@ const App = () => {
   };
 
   return (
-    <Fragment>
-      <section className='body'>
+    <Container sx={{ pt: '1em' }}>
     <FadeIn delay='200'>
       <AddTransaction onSaveTransactionData={addUserHandler} />
     </FadeIn>
@@ -87,8 +87,7 @@ const App = () => {
          delay='300'>
       <TransactionList transactions={transactionsList} />
     </FadeIn>
-    </section>
-    </Fragment>
+    </Container>
   );
 };
 

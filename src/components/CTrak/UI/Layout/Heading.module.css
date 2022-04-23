@@ -1,28 +1,18 @@
-.title {
-    text-align: center;
-    background-color: #1b2a41;
-}
-
-.title h1 {
-    color: black;
-
-}
-
-.title h1:hover {
-    color: #93032e;
-}
-
-.link {
+.navi a {
     text-decoration: none;
+    color: white;
 }
 
-.link {
-    text-decoration: none;
-    color: #eafdf8;
-}
-
-.link {
+.navi a:hover {
     color: #93032e;
+    background-color: white;
+
 }
 
-/* ["eafdf8","888098","1b2a41","93032e","0fa3b1"] */
+.exit a:hover {
+    color: #93032e;
+    background-color: white;
+}
+
+
+

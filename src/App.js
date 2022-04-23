@@ -6,12 +6,15 @@ import Resume from "./components/Resume/Resume";
 import Contact from "./components/Contact/Contact";
 import Heading from "./components/Homepage/Heading";
 import { Container } from "@mui/material";
+import ScrollToTop from './components/ScrollToTop'
+
 
 import styles from "./Home.module.css";
 import KnowledgeBase from "./components/Homepage/KnowledgeBase";
 import PreviousWork from "./components/Portfolio/PreviousWork";
 import { Fragment, useRef } from "react";
 import { Box } from "@mui/system";
+
 
 
 function App() {
@@ -40,6 +43,7 @@ function handleBackClick(props) {
           </Box>
           <Contact/>
       </div>
+      <ScrollToTop />
     </Layout>
   );
 }

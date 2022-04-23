@@ -1,9 +1,12 @@
 import { Container, Typography } from '@mui/material'
+import Footer from '../layout/Footer'
+import PrivacyHeader from '../layout/PrivacyHeader'
 import Layout from '../layout/layout'
 
 function Privacy() {
   return (
-    <Layout>
+    <>
+    <PrivacyHeader />
       <Container sx={{ pt: '2em', pb: '1em', width: '50%', pb: '5em', textAlign: 'center'}}>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
           Privacy Policy
@@ -46,7 +49,8 @@ function Privacy() {
           </a>
         </Typography>
       </Container>
-    </Layout>
+    <Footer />
+    </>
   )
 }
 

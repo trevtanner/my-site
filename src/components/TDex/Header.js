@@ -33,7 +33,7 @@ export default function Header() {
               </Typography>
             </Grid>
             <Grid item xs={4} sx={{ textAlign: 'end' }}>
-              <Button component={Link} to="/" variant="contained">
+              <Button component={Link} to="/" variant="contained" className={classes.exit}>
                 EXIT
               </Button>
             </Grid>

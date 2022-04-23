@@ -41,6 +41,31 @@ function MainNavigation() {
     });
   }
 
+  const scrollToAbout = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 900,
+      behavior: "smooth"
+    });
+  }
+
+  const scrollToPortfolio = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 1490,
+      behavior: "smooth"
+    });
+  }
+
+  const scrollToContact = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      left: 0,
+      top: document.body.scrollHeight,
+      behavior: "smooth"
+    });
+  }
+
   return (
     <AppBar
       position="sticky"
@@ -92,9 +117,9 @@ function MainNavigation() {
                   <Button sx={{ display: 'block' }} onClick={scrollToTop}>
                     Home
                   </Button>
-                  <Button sx={{ display: 'block' }}>About</Button>
-                  <Button sx={{ display: 'block' }}>Portfolio</Button>
-                  <Button sx={{ display: 'block' }}>Contact</Button>
+                  <Button sx={{ display: 'block' }} onClick={scrollToAbout}>About</Button>
+                  <Button sx={{ display: 'block' }} onClick={scrollToPortfolio}>Portfolio</Button>
+                  <Button sx={{ display: 'block' }} onClick={scrollToContact}>Contact</Button>
                 </Typography>
               </MenuItem>
               {/* {pages.map((page) => (
@@ -118,13 +143,13 @@ function MainNavigation() {
             <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={scrollToTop}>
               Home
             </Button>
-            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={scrollToAbout}>
               About
             </Button>
-            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={scrollToPortfolio}>
               Portfolio
             </Button>
-            <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+            <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={scrollToContact}>
               Contact
             </Button>
           </Box>

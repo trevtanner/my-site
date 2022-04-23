@@ -6,3 +6,13 @@
 .heading:hover {
     color: black;
 }
+
+.exit:hover {
+    background-color: white;
+    color: red
+}
+
+.exit {
+    background-color: transparent;
+    color: white;
+}

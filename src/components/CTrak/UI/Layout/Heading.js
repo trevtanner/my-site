@@ -1,19 +1,18 @@
-import React from "react";
-import classes from "./Heading.module.css";
-import FadeIn from "react-fade-in";
 import { Link } from "react-router-dom";
-import { AppBar, Box, IconButton, Toolbar, Button, Container, Typography, Grid } from "@mui/material";
+import { AppBar, Box, Toolbar, Button, Typography, Grid } from "@mui/material";
 
-const Heading = (props) => {
+import classes from './Heading.module.css';
+
+const Heading = () => {
   return (
     <Box position="sticky" sx={{ }}>
     <AppBar position="sticky" sx={{ backgroundColor: '#1B2A41' }}>
       <Toolbar>
         <Grid container>
-          <Grid item xs={5} sx={{ textAlign: 'start' }}> 
-          <Button component={Link} to='/c-trak' color='inherit' size='small'>Tracker</Button>
-          <Button component={Link} to='/c-trak/prices' color='inherit' size='small'>Prices</Button>
-          <Button component={Link} to='/c-trak/resources' color='inherit' size='small'>Resources</Button>
+          <Grid item xs={5} sx={{ textAlign: 'start' }} className={classes.navi}>  
+          <Button component={Link} to='/c-trak' size='small'>Tracker</Button>
+          <Button component={Link} to='/c-trak/prices' size='small'>Prices</Button>
+          <Button component={Link} to='/c-trak/resources' size='small'>Resources</Button>
           </Grid>
           <Grid item xs={2} sx={{ textAlign: 'center' }}>
           <Typography
@@ -24,7 +23,7 @@ const Heading = (props) => {
             C-Trak
           </Typography>
           </Grid>
-          <Grid item xs={5} sx={{ textAlign: 'end' }}>
+          <Grid item xs={5} sx={{ textAlign: 'end' }} className={classes.exit}>
             <Button component={Link} to="/" variant="contained" color='error' size='small'>
               EXIT
             </Button>
