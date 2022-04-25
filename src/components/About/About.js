@@ -1,18 +1,10 @@
 import {
   Avatar,
-  Container,
   Grid,
-  List,
-  ListItem,
-  ListItemText,
-  Paper,
   Typography,
   Box,
 } from '@mui/material'
-import { Fragment } from 'react'
 import BookIcon from '@mui/icons-material/Book'
-
-import styles from '../../Home.module.css'
 import headshot from '../../assets/headshot.jpg'
 
 function about() {

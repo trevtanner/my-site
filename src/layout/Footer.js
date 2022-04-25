@@ -5,7 +5,6 @@ import { Link as RouterLink } from 'react-router-dom'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import EmailIcon from '@mui/icons-material/Email'
 
 import classes from './Footer.module.css'
 
