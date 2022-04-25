@@ -59,7 +59,7 @@ export default function KnowledgeBase() {
 
   return (
     <Container
-        sx={{ mb: "1em", pb: "1em", pt: ".5em", minWidth: "75%", maxWidth: '90%' }}
+        sx={{ mb: "1em", pb: "5.5em", pt: "5.5em", minWidth: "75%", maxWidth: '90%' }}
       >
         <div>
     {/* fix issue with margins in full screen */}

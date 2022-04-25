@@ -19,7 +19,7 @@ function about() {
   let paraStyle = { margin: 'auto', color: 'black', maxWidth: '40vw' }
 
   return (
-    <Box sx={{ padding: '2em' }}>
+    <Box sx={{ padding: '2em' }} id="about">
       <Typography
         variant="h2"
         sx={{ textDecoration: 'underline', pb: '.5em', color: 'black' }}

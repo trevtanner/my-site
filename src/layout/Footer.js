@@ -15,7 +15,7 @@ function Footer() {
     <AppBar
       position="static"
       className={classes.contain}
-      sx={{ backgroundColor: '#2C2C2C', pt: '1em' }}
+      sx={{ backgroundColor: '#2C2C2C', pt: '2em', pb: '2em' }}
     >
       <Container maxWidth="xl">
         <Typography variant="h4">
@@ -88,7 +88,7 @@ function Footer() {
           page apps.
         </Typography>
         <Typography variant="body2">
-          Trevor Tanner© {currentYear} Copyright TT Web Development and Design
+          Trevor Tanner © {currentYear} Copyright TT Web Development and Design
           <Button component={RouterLink} to='/privacy' className={classes.links}>Privacy Policy</Button>
         </Typography>
       </Container>

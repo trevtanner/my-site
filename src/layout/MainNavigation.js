@@ -43,18 +43,12 @@ function MainNavigation() {
 
   const scrollToAbout = (event) => {
     event.preventDefault();
-    window.scrollTo({
-      top: 900,
-      behavior: "smooth"
-    });
+    document.getElementById("about").scrollIntoView({behavior: "smooth", block:"center"})
   }
 
   const scrollToPortfolio = (event) => {
     event.preventDefault();
-    window.scrollTo({
-      top: 1490,
-      behavior: "smooth"
-    });
+    document.getElementById("portfolio").scrollIntoView({behavior: "smooth"})
   }
 
   const scrollToContact = (event) => {

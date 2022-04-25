@@ -14,7 +14,7 @@ function about() {
   }));
 
   return (
-    <Container sx={{ p: "1em" }}>
+    <Container sx={{ pt: "4em", pb: '5.5em' }} id="contact">
       <Grid container spacing={5} className={classes.main}>
         <Grid item xs={12} sx={{ color: "black" }}>
           <AllInboxIcon sx={{ width: 56, height: 56 }} />
@@ -22,7 +22,7 @@ function about() {
         </Grid>
           <Grid item xs={12} sm={12} md={6}>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <IconButton sx={{ width: "90%" }}>
+            <IconButton sx={{ width: "70%" }}>
               <Paper
                 component="a"
                 href="mailto:trevor@trevorstanner.com?subject=Reaching Out"
@@ -30,7 +30,7 @@ function about() {
                 sx={{
                   backgroundColor: "#39393A",
                   color: "white",
-                  width: "100%",
+                  width: "90%",
                 }}
                 className={classes.contactButton}
               >
@@ -44,12 +44,12 @@ function about() {
           </Grid>
         <Grid item xs={12} sm={12} md={6}>
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <IconButton sx={{ width: "90%" }}>
+          <IconButton sx={{ width: "70%" }}>
             <Paper
               component="a"
               href="../Resume/TrevorTannerResume.pdf"
               elevation={12}
-              sx={{ width: "100%", backgroundColor: "#39393A", color: "white" }}
+              sx={{ width: "90%", backgroundColor: "#39393A", color: "white" }}
               className={classes.contactButton}
               download
             >

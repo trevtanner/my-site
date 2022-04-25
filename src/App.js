@@ -1,51 +1,50 @@
-import "./App.css";
-import Layout from "./layout/layout";
-import About from "./components/About/About";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Resume from "./components/Resume/Resume";
-import Contact from "./components/Contact/Contact";
-import Heading from "./components/Homepage/Heading";
-import { Container } from "@mui/material";
+import './App.css'
+import Layout from './layout/layout'
+import About from './components/About/About'
+import Portfolio from './components/Portfolio/Portfolio'
+import Resume from './components/Resume/Resume'
+import Contact from './components/Contact/Contact'
+import Heading from './components/Homepage/Heading'
+import { Container } from '@mui/material'
 import ScrollToTop from './components/ScrollToTop'
 
-
-import styles from "./Home.module.css";
-import KnowledgeBase from "./components/Homepage/KnowledgeBase";
-import PreviousWork from "./components/Portfolio/PreviousWork";
-import { Fragment, useRef } from "react";
-import { Box } from "@mui/system";
-
-
+import styles from './Home.module.css'
+import KnowledgeBase from './components/Homepage/KnowledgeBase'
+import PreviousWork from './components/Portfolio/PreviousWork'
+import { Fragment, useRef } from 'react'
+import { Box } from '@mui/system'
 
 function App() {
-
-function handleBackClick(props) {
-  props.current.scrollIntoView({ behavior: 'smooth' })
-}
-
+  function handleBackClick(props) {
+    props.current.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <Layout>
       <Heading />
       <div className="App">
         <Box fluid className={styles.knowledgebg} />
+        <div id="about">
           <About />
+        </div>
           <Box
             sx={{
-              backgroundColor: "#39393A",
-              pb: "3em",
-              width: "100%",
-              color: '#FEFEFA'
+              backgroundColor: '#39393A',
+              pb: '3em',
+              width: '100%',
+              color: '#FEFEFA',
             }}
           >
-            <KnowledgeBase/>
-            <PreviousWork/>
+            <div id="portfolio">
+            <KnowledgeBase />
+            <PreviousWork />
+        </div>
           </Box>
-          <Contact/>
+        <Contact />
       </div>
       <ScrollToTop />
     </Layout>
-  );
+  )
 }
 
-export default App;
+export default App

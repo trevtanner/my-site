@@ -110,7 +110,7 @@ const images = [
 
 export default function PreviousWork() {
   return (
-    <Container component="section" sx={{ mt: 4, mb: 4 }}>
+    <Container component="section" sx={{ mt: 4, mb: 4 }} id="portfolio">
               <Typography variant="h4">Examples of my Previous Work</Typography>
       <Paper elevation={12} sx={{ mt: 4, display: 'flex', flexWrap: 'wrap', backgroundColor: 'transparent' }}>
         {images.map((image) => (
