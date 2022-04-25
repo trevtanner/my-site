@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.073c9b0a.css",
-    "main.js": "/my-site/static/js/main.b838a23c.js",
-    "static/js/787.a5fa54f9.chunk.js": "/my-site/static/js/787.a5fa54f9.chunk.js",
-    "static/media/logo.svg": "/my-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/my-site/index.html",
-    "main.073c9b0a.css.map": "/my-site/static/css/main.073c9b0a.css.map",
-    "main.b838a23c.js.map": "/my-site/static/js/main.b838a23c.js.map",
-    "787.a5fa54f9.chunk.js.map": "/my-site/static/js/787.a5fa54f9.chunk.js.map"
+    "main.css": "/static/css/main.9f49fca0.css",
+    "main.js": "/static/js/main.d831e17e.js",
+    "static/media/workstation1080.jpg": "/static/media/workstation1080.982dc4a2651cf729dc83.jpg",
+    "static/media/battlestation1080.jpg": "/static/media/battlestation1080.3ec1bd46ab1786afc1dd.jpg",
+    "static/media/resumebg1080.jpg": "/static/media/resumebg1080.804c4c9c61cb3dac3cb0.jpg",
+    "static/media/contactus1080.jpg": "/static/media/contactus1080.60647d4009f1e609eed4.jpg",
+    "static/media/TrevorTannerResume.pdf": "/static/media/TrevorTannerResume.b97f1d14895433bf48f1.pdf",
+    "static/media/headshot.jpg": "/static/media/headshot.1647446acfd9fd3f0235.jpg",
+    "index.html": "/index.html",
+    "main.9f49fca0.css.map": "/static/css/main.9f49fca0.css.map",
+    "main.d831e17e.js.map": "/static/js/main.d831e17e.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b838a23c.js"
+    "static/css/main.9f49fca0.css",
+    "static/js/main.d831e17e.js"
   ]
 }
