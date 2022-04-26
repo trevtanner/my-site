@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom';
 import ResumePdf from './components/Resume/ResumePdf';
 import Privacy from './Pages/Privacy';
 import CTrak from './Pages/CTrak'
@@ -12,7 +12,7 @@ import TTWeather from './Pages/TTWeather'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
       <Route path='/' element={<App />} />
       <Route path='resume' element={<ResumePdf />} />
@@ -21,7 +21,7 @@ ReactDOM.render(
       <Route path='t-dex/*' element={<TDex />} />
       <Route path='ttweather' element={<TTWeather />} />
     </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
