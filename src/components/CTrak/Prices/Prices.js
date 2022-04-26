@@ -27,6 +27,7 @@ const Prices = () => {
       try {
         const response = await fetch(
           `https://api.nomics.com/v1/currencies/ticker?key=${key}&per-page=50&page=1`, {
+            method: 'GET',
             mode: 'no-cors',
           }
         );
