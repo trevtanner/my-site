@@ -17,7 +17,7 @@ function App() {
     <Container className={classes.body}>
       <ScrollToTop />
     <Routes>
-    <Route exact path='/' element={<Home />}/>
+    <Route path='/' element={<Home />}/>
     <Route path=':name' element={<PokedexEntry />}/>
     </Routes>
     </Container>

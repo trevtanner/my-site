@@ -12,7 +12,6 @@ import { useState, useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 
 import DexEntry from './DexEntry'
-import Footer from '../../layout/Footer'
 import classes from './PokedexEntry.module.css'
 
 function PokedexEntry() {
@@ -23,10 +22,9 @@ function PokedexEntry() {
   const [secondType, setSecondType] = useState('')
   const [dex, setDex] = useState('')
 
-  const url = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1)
-
   //https://bigsondev.com/blog/how-to-fetch-data-in-react-using-pokeapi/
   useEffect(() => {
+    const url = window.location.hash.substring(window.location.hash.lastIndexOf('/') + 1)
     let isMounted = true
     const fetchData = async () => {
       try {
@@ -72,7 +70,7 @@ function PokedexEntry() {
     return () => {
       isMounted = false
     }
-  }, [url, entries, type, secondType ]);
+  }, []);
 
   if (error) {
     return <Alert severity="error">{error}</Alert>
