@@ -26,7 +26,9 @@ const Prices = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://api.nomics.com/v1/currencies/ticker?key=${key}&per-page=50&page=1`
+          `https://api.nomics.com/v1/currencies/ticker?key=${key}&per-page=50&page=1`, {
+            mode: 'no-cors',
+          }
         );
         const data = await response.json();
         setCoins(data);
