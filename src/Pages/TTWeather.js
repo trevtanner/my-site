@@ -4,6 +4,7 @@ import Weather from "../components/TTWeather/Weather";
 import Footer from "../layout/Footer";
 import { Container, Paper } from '@mui/material'
 import Header from "../components/TTWeather/Header";
+import ScrollToTop from "../components/ScrollToTop";
 
 
 
@@ -69,6 +70,8 @@ export default function App() {
           )}
         </div>
         </Container>
+        <ScrollToTop />
+
         <Footer />
       </>
     );

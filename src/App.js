@@ -20,9 +20,8 @@ function App() {
       <Heading />
       <div className="App">
         <Box fluid className={styles.knowledgebg} />
-        <div id="about">
+        <div id="about" />
           <About />
-        </div>
           <Box
             sx={{
               backgroundColor: '#39393A',
@@ -36,7 +35,9 @@ function App() {
             <PreviousWork />
         </div>
           </Box>
+          <div id="contact">
         <Contact />
+        </div>
       </div>
       <ScrollToTop />
     </Layout>

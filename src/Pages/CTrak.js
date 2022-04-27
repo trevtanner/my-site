@@ -11,6 +11,7 @@ import Resources from "../components/CTrak/Resources/Resources";
 import { Container } from "@mui/material";
 
 import classes from './CTrak.module.css'
+import ScrollToTop from "../components/ScrollToTop";
 
 function CTrak() {
     return (
@@ -24,6 +25,8 @@ function CTrak() {
     </Routes>
     </Container>
       <Footer />
+      <ScrollToTop />
+
   </>
 );
 }
