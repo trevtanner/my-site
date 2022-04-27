@@ -26,9 +26,7 @@ const Prices = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          'https://api.nomics.com/v1/currencies/ticker?key=5a9bc4880b81834b30d8682851966e82126888f1&per-page=50&page=1', {
-            mode: 'cors',
-          }
+          'https://api.nomics.com/v1/currencies/ticker?key=5a9bc4880b81834b30d8682851966e82126888f1&per-page=50&page=1'
         );
         const data = await response.json();
         setCoins(data);
