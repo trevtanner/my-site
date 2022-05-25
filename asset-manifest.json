@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.c4f7c615.css",
-    "main.js": "/my-site/static/js/main.ba992242.js",
+    "main.css": "/my-site/static/css/main.f2aab305.css",
+    "main.js": "/my-site/static/js/main.c0af21ac.js",
     "static/media/workstation1080.jpg": "/my-site/static/media/workstation1080.982dc4a2651cf729dc83.jpg",
     "static/media/battlestation1080.jpg": "/my-site/static/media/battlestation1080.3ec1bd46ab1786afc1dd.jpg",
     "static/media/resumebg1080.jpg": "/my-site/static/media/resumebg1080.804c4c9c61cb3dac3cb0.jpg",
@@ -9,11 +9,11 @@
     "static/media/TrevorTannerResume.pdf": "/my-site/static/media/TrevorTannerResume.b97f1d14895433bf48f1.pdf",
     "static/media/headshot.jpg": "/my-site/static/media/headshot.1647446acfd9fd3f0235.jpg",
     "index.html": "/my-site/index.html",
-    "main.c4f7c615.css.map": "/my-site/static/css/main.c4f7c615.css.map",
-    "main.ba992242.js.map": "/my-site/static/js/main.ba992242.js.map"
+    "main.f2aab305.css.map": "/my-site/static/css/main.f2aab305.css.map",
+    "main.c0af21ac.js.map": "/my-site/static/js/main.c0af21ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4f7c615.css",
-    "static/js/main.ba992242.js"
+    "static/css/main.f2aab305.css",
+    "static/js/main.c0af21ac.js"
   ]
 }
