@@ -15,6 +15,12 @@ function about() {
 
   return (
     <Container sx={{ pt: "4em", pb: '5.5em' }} id="contact">
+            <motion.div
+        transition={{ duration: 1.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+      >
       <Grid container spacing={5} className={classes.main}>
         <Grid item xs={12} sx={{ color: "black" }}>
           <AllInboxIcon sx={{ width: 56, height: 56 }} />
@@ -85,6 +91,7 @@ function about() {
           </Paper>
         </Grid>
       </Grid>
+      </motion.div>
     </Container>
   );
 }

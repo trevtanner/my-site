@@ -6,8 +6,7 @@ import Heading from './components/Homepage/Heading'
 import ScrollToTop from './components/ScrollToTop'
 
 import styles from './Home.module.css'
-import KnowledgeBase from './components/Homepage/KnowledgeBase'
-import PreviousWork from './components/Portfolio/PreviousWork'
+import Portfolio from './components/Portfolio/Portfolio'
 import { Box } from '@mui/system'
 
 function App() {
@@ -31,8 +30,7 @@ function App() {
             }}
           >
             <div id="portfolio">
-            <KnowledgeBase />
-            <PreviousWork />
+            <Portfolio />
         </div>
           </Box>
           <div id="contact">
